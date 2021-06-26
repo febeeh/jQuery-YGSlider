@@ -3,7 +3,13 @@ Develop Your Own Slider Using This jQuery Code. [Click Here To See Slider Develo
 
 # Documentation :book:
 # USAGE :memo: :
-
+* Default Values
+```
+var config = 
+{
+     objPerSlide: 4, // Per Slide 4 Objects Will Be Displayed By Default
+}
+```
 * Default Class Name :
 ```
 Slider : slideme
@@ -22,7 +28,13 @@ Fade Out : fadeout-slider
 
 # Get Started :snowman:
 * Download JS Folder And Add To Your Website Directory.
-
+* Set Number Of Objects To Be Displayed In Each Slide
+```
+var config = 
+{
+     objPerSlide: 4, // Enter Here Total Number Object To Be Displayed In Each Slide
+}
+```
 * Configure Class Name ( js/slider.js ) : 
 :warning: Dont Edit This If You Want To Use Default Class Name :exclamation::exclamation::exclamation:
 ``` 
