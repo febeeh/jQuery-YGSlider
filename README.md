@@ -1,5 +1,5 @@
 # :star: jQuery Slider Template :star:
-Develop Your Own Slider Using This jQuery Code. Check Out  Developed Using This Code.
+Develop Your Own Slider Using This jQuery Code. [Click Here To See Slider Developed By Using This Code](https://github.com/febeeh/Image-Slider-jQuery)
 
 # Documentation :book:
 # USAGE :memo: :
