@@ -20,13 +20,14 @@ var animateClass = {
 	fadeout_speed: 1000, // FadeOut Animation Speed (In Milliseconds)
 };
 
+// Required Variable
+var total_len = $(mainClass.slider).length;
+var sliderprev = 0;
+
 //Configuration
 var config = {
 	objPerSlide: 4, // Enter Here Total Number Object To Be shown In Each Slides
 }
-// Required Variable
-var total_len = $(mainClass.slider).length;
-var sliderprev = 0;
 var total_slider = config.objPerSlide;
 var slidercount = total_slider;
 hideSlider(); // Hide All Slider
