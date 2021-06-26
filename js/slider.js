@@ -23,63 +23,20 @@ var animateClass = {
 // Required Variable
 var total_len = $(mainClass.slider).length;
 var sliderprev = 0;
-if (screen.width <= '1243' && screen.width > '939') {
-	var total_slider = 3; // no of objects to show each slide
-	var slidercount = total_slider;
-	hideSlider(); // Hide All Slider
-	sliderAnimate(); // Animation Begin
-	for (var i = 0; i < total_slider; i++) {
-		$(mainClass.slider).eq(i).show();
-	}
-	$(mainClass.right_slide).click(function () {
-		rightAction(total_slider); // Right Button Action 
-	});
-	$(mainClass.left_slide).click(function () {
-		leftAction(total_slider); // Left Button Action 
-	});
-} else if (screen.width <= '939' && screen.width > '629') {
-	var total_slider = 2; // no of objects to show each slide
-	var slidercount = total_slider;
-	hideSlider(); // Hide All Slider
-	sliderAnimate(); // Animation Begin
-	for (var i = 0; i < total_slider; i++) {
-		$(mainClass.slider).eq(i).show();
-	}
-	$(mainClass.right_slide).click(function () {
-		rightAction(total_slider); // Right Button Action 
-	});
-	$(mainClass.left_slide).click(function () {
-		leftAction(total_slider); // Left Button Action 
-	});
-} else if (screen.width <= '629') {
-	var total_slider = 1; // no of objects to show each slide
-	var slidercount = total_slider;
-	hideSlider(); // Hide All Slider
-	sliderAnimate(); // Animation Begin
-	for (var i = 0; i < total_slider; i++) {
-		$(mainClass.slider).eq(i).show();
-	}
-	$(mainClass.right_slide).click(function () {
-		rightAction(total_slider); // Right Button Action 
-	});
-	$(mainClass.left_slide).click(function () {
-		leftAction(total_slider); // Left Button Action 
-	});
-} else {
-	var total_slider = 4; // No Of Objects To Show Each Slide
-	var slidercount = total_slider;
-	hideSlider(); // Hide All Slider
-	sliderAnimate(); // Animation Begin
-	for (var i = 0; i < total_slider; i++) {
-		$(mainClass.slider).eq(i).show();
-	}
-	$(mainClass.right_slide).click(function () {
-		rightAction(total_slider); // Right Button Action 
-	});
-	$(mainClass.left_slide).click(function () {
-		leftAction(total_slider); // Left Button Action 
-	});
+var total_slider = 4; // No Of Objects To Show Each Slide
+var slidercount = total_slider;
+hideSlider(); // Hide All Slider
+sliderAnimate(); // Animation Begin
+for (var i = 0; i < total_slider; i++) {
+	$(mainClass.slider).eq(i).show();
 }
+$(mainClass.right_slide).click(function () {
+	rightAction(total_slider); // Right Button Action 
+});
+$(mainClass.left_slide).click(function () {
+	leftAction(total_slider); // Left Button Action 
+});
+
 
 function rightAction(totalCount) {
 	if (total_len <= slidercount) {
@@ -232,23 +189,23 @@ function sliderAnimate() {
 
 	});
 }
-function resetAnimation(){
-	$(mainClass.slider + " " + animateClass.fadeIn_slider).each(function() {
+function resetAnimation() {
+	$(mainClass.slider + " " + animateClass.fadeIn_slider).each(function () {
 		$(this).stop(); // Stop Animating
 	});
-	$(mainClass.slider + " " + animateClass.fadeOut_slider).each(function() {
+	$(mainClass.slider + " " + animateClass.fadeOut_slider).each(function () {
 		$(this).stop(); // Stop Animating
 	});
-	$(mainClass.slider + " " + animateClass.slide_to_left_slider).each(function() {
+	$(mainClass.slider + " " + animateClass.slide_to_left_slider).each(function () {
 		$(this).stop(); // Stop Animating
 	});
-	$(mainClass.slider + " " + animateClass.slide_to_right_slider).each(function() {
+	$(mainClass.slider + " " + animateClass.slide_to_right_slider).each(function () {
 		$(this).stop(); // Stop Animating
 	});
-	$(mainClass.slider + " " + animateClass.slide_to_top_slider).each(function() {
+	$(mainClass.slider + " " + animateClass.slide_to_top_slider).each(function () {
 		$(this).stop(); // Stop Animating
 	});
-	$(mainClass.slider + " " + animateClass.slide_to_down_slider).each(function() {
+	$(mainClass.slider + " " + animateClass.slide_to_down_slider).each(function () {
 		$(this).stop(); // Stop Animating
 	});
 }
