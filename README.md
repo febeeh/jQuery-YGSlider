@@ -24,14 +24,14 @@ Fade Out : fadeout-slider
 * Download JS Folder And Add To Your Website Directory.
 
 * Configure Class Name ( js/slider.js ) : 
-:warning: Dont Edit This If You Want To Use Default Class Name !!! 
+:warning: Dont Edit This If You Want To Use Default Class Name :exclamation::exclamation::exclamation:
 ``` 
 slider: ".slideme", // Enter here class name of slider ( Add this class name on each respective object classes).
 left_slide: ".left-slide", // Enter here class name of your left slide button.
 right_slide: ".right-slide" // Enter here class name of your right slide button.
 ```
 * Configure Animation ( js/slider.js ) : 
-:warning: Dont Edit This If You Want To Use Default Animation Speed !!!
+:warning: Dont Edit This If You Want To Use Default Animation Speed :exclamation::exclamation::exclamation:
 ```
 left_slide_speed: 500, // Left Slide Animation Speed (In Milliseconds)
 right_slide_speed: 500, // right Slide Animation Speed (In Milliseconds)
