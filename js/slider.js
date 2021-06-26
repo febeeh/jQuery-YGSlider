@@ -20,10 +20,14 @@ var animateClass = {
 	fadeout_speed: 1000, // FadeOut Animation Speed (In Milliseconds)
 };
 
+//Configuration
+var config = {
+	objPerSlide: 4, // Enter Here Total Number Object To Be shown In Each Slides
+}
 // Required Variable
 var total_len = $(mainClass.slider).length;
 var sliderprev = 0;
-var total_slider = 4; // No Of Objects To Show Each Slide
+var total_slider = config.objPerSlide;
 var slidercount = total_slider;
 hideSlider(); // Hide All Slider
 sliderAnimate(); // Animation Begin
@@ -140,12 +144,10 @@ function sliderAnimate() {
 	$(mainClass.slider + " " + animateClass.slide_to_left_slider).each(function (i) {
 		$(mainClass.slider + " " + animateClass.slide_to_left_slider).eq(i).css({
 			position: "relative",
-			opacity: "0",
 			right: "40px"
 		});
 		$(mainClass.slider + " " + animateClass.slide_to_left_slider).eq(i).show();
 		$(mainClass.slider + " " + animateClass.slide_to_left_slider).eq(i).animate({
-			opacity: "1",
 			right: "0px"
 		}, animateClass.left_slide_speed);
 	});
@@ -153,12 +155,10 @@ function sliderAnimate() {
 	$(mainClass.slider + " " + animateClass.slide_to_right_slider).each(function (i) {
 		$(mainClass.slider + " " + animateClass.slide_to_right_slider).eq(i).css({
 			position: "relative",
-			opacity: "0",
 			left: "40px"
 		});
 		$(mainClass.slider + " " + animateClass.slide_to_right_slider).eq(i).show();
 		$(mainClass.slider + " " + animateClass.slide_to_right_slider).eq(i).animate({
-			opacity: "1",
 			left: "0px"
 		}, animateClass.right_slide_speed);
 	});
@@ -166,12 +166,10 @@ function sliderAnimate() {
 	$(mainClass.slider + " " + animateClass.slide_to_top_slider).each(function (i) {
 		$(mainClass.slider + " " + animateClass.slide_to_top_slider).eq(i).css({
 			position: "relative",
-			opacity: "0",
 			top: "20px"
 		});
 		$(mainClass.slider + " " + animateClass.slide_to_top_slider).eq(i).show();
 		$(mainClass.slider + " " + animateClass.slide_to_top_slider).eq(i).animate({
-			opacity: "1",
 			top: "0px"
 		}, animateClass.top_slide_speed);
 	});
@@ -179,11 +177,9 @@ function sliderAnimate() {
 	$(mainClass.slider + " " + animateClass.slide_to_down_slider).each(function (i) {
 		$(mainClass.slider + " " + animateClass.slide_to_down_slider).eq(i).css({
 			position: "relative",
-			opacity: "0",
 			bottom: "20px"
 		});
 		$(mainClass.slider + " " + animateClass.slide_to_down_slider).eq(i).animate({
-			opacity: "1",
 			bottom: "0px"
 		}, animateClass.down_slide_speed);
 
