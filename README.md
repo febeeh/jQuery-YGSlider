@@ -1,4 +1,4 @@
-# :star: jQuery Slider :star:
+# :star: jQuery YGSlider :star:
 Develop Your Own Slider Using This jQuery Code. [Click Here To See A Slider Developed Using This Code](https://github.com/febeeh/Image-Slider-jQuery)
 
 # Documentation :book:
