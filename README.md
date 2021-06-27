@@ -1,4 +1,4 @@
-# :star: jQuery YGSlider :star:
+# :star: jQuery YGSlider v1.2 :star:
 Develop Your Own Slider Using This jQuery Code. [Click Here To See A Slider Developed Using This Code](https://github.com/febeeh/Image-Slider-jQuery)
 
 # Documentation :book:
@@ -7,7 +7,9 @@ Develop Your Own Slider Using This jQuery Code. [Click Here To See A Slider Deve
 ```
 var config = 
 {
-     objPerSlide: 4, // Per Slide 4 Objects Will Be Displayed By Default
+	objPerSlide: 4, // Enter Here Total Number Object To Be Displayed In Each Slides
+	autoSlide: true, // true - To Enable Auto Slide, false - To Disable Auto Slide
+	autoSlide_delay: '5000', // Enter Auto Slide Delay In Millisecond
 }
 ```
 * Default Class Name :
@@ -33,6 +35,8 @@ Fade Out : fadeout-slider
 var config = 
 {
      objPerSlide: 4, // Enter Here Total Number Object To Be Displayed In Each Slide
+	autoSlide: true, // true - To Enable Auto Slide, false - To Disable Auto Slide
+	autoSlide_delay: '5000', // Enter Auto Slide Delay In Millisecond     
 }
 ```
 * Configure Class Name ( js/slider.js ) : 
