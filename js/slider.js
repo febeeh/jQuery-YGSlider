@@ -31,7 +31,7 @@ var total_len = $(mainClass.slider).length;
 var sliderprev = 0;
 // Configuration
 var config = {
-	objPerSlide: 4, // Enter Here Total Number Object To Be shown In Each Slides
+	objPerSlide: 4, // Enter Here Total Number Object To Be Displayed In Each Slides
 	autoSlide: true, // true - To Enable Auto Slide, false - To Disable Auto Slide
 	autoSlide_delay: '5000', // Enter Auto Slide Delay In Millisecond
 }
