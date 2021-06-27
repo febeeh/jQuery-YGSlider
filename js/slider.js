@@ -1,8 +1,8 @@
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-// 																												  // 
-// 								  This Code Is Developed By Febeeh Parambatt  							  	  	  // 
-// 						For More Details Visit https://github.com/febeeh/jQuery-YGSlider 						  // 
-// 																												  // 
+// 														  //													  // 
+// 				    This Code Is Developed By Febeeh Parambatt  	  			  //	
+// 			For More Details Visit https://github.com/febeeh/jQuery-YGSlider  			  //
+// 														  //													  // 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 // Main Class
 var mainClass = {
