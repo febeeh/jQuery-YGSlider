@@ -44,9 +44,11 @@ for (var i = 0; i < total_slider; i++) {
 }
 $(mainClass.right_slide).click(function () {
 	rightAction(total_slider); // Right Button Action 
+	autoSlideReset();
 });
 $(mainClass.left_slide).click(function () {
 	leftAction(total_slider); // Left Button Action 
+	autoSlideReset();
 });
 
 
@@ -231,4 +233,11 @@ if (config.autoSlide == true) {
 			rightAction(total_slider);
 		}, config.autoSlide_delay);
 	});
+}
+
+function autoSlideReset(){
+    clearInterval(autoSlide);
+    autoSlide = setInterval(function () {
+        rightAction(total_slider);
+    }, config.autoSlide_delay);
 }
